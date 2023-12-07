@@ -1,0 +1,142 @@
+* {
+  background-color:#f9fafc;
+  font-family: 'Nunito', sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #434c6f;
+  display: block;
+}
+#input {
+  height: 60px;
+  width: 400px;
+  border: 1px solid #A3A8B5;
+  border-radius: 12px;
+  margin: 12px 0;
+  resize: none;
+  padding: 10px;
+  background-color: #f0f2f2;
+  font-family: inherit;
+}
+#input:hover {
+  border-color: #ccd0da;
+}
+#input:active {
+  border-color: #5640b0;
+}
+.input-with-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0% auto;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#checkbox {
+  width: 17px;
+  height:17px;
+  margin-right: 10px;
+ /* checkbox ile input arasına bosluk birakmak icin */
+}
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.submission-container{
+  margin: 0 auto;
+}
+/* delete ikonu */
+i {
+  cursor: pointer;
+  color: #9184b7;
+ /* ikonun sagda kalmasi icin */
+  margin-left: auto;
+}
+/* submit butonu */
+.save-button {
+  width: 100px;
+  font-family: inherit;
+  padding: 7px 10px;
+  background-color: #10172a;
+  border-radius: 10px;
+  color: #fcfafc;
+  border: none;
+}
+.save-button:hover {
+  background-color: #1f2943;
+}
+.container {
+  font-family: 'Comfortaa', sans-serif;
+  padding-top: 20px;
+  color: #10172a;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 20px;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 12px;
+  -webkit-box-shadow:0px 0px 10px 0px #ccd0da;
+  -moz-box-shadow:0px 0px 10px 0px #ccd0da;
+  box-shadow:0px 0px 10px 0px #ccd0da;
+}
+li {
+  padding-top: 3%;
+  width: 400px;
+  border: 1px solid #a3a8b5;
+  border-radius: 12px;
+  overflow-y: auto;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  order: -1;
+}
+.task-item label {
+  flex-grow: 1;
+}
+/* İşaretli görevlerin metnini çizer */
+.task-item.checked label {
+  text-decoration: line-through;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #384567;
+  border-radius: 10px;
+  margin: 12px 12px;
+}
+@media (max-width: 1000px) {
+  .container {
+      flex-direction: column;
+      padding: 0 0px;
+      width: 100%;
+      margin: 0% auto;
+ }
+  .input-container {
+      margin: 0% auto;
+      justify-content: start;
+      align-items: start;
+      margin-bottom: 10px;
+ }
+}
+@media (max-width: 500px) {
+  .container {
+      border: none;
+ }
+}
